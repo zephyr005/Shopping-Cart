@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Razorpay Button</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      position: fixed;
+      z-index: 100;
+      top: 0;
+      left: 0;
+      right: 0;
+
+      background-color: black;
+      border-bottom: 1px solid white;
+      padding: 1rem;
+      font-size: 1rem;
+    }
+
+    nav .brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav .nav-items a {
+      margin: 0 1rem;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      width: 100vw;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+      background-color: dodgerblue;
+      border: none;
+      outline: none;
+      padding: 18px 50px;
+      font-size: 18px;
+      font-weight: 600;
+      color: white;
+      border-radius: 10px;
+      /* display: none; */
+      transition-duration: 0.5s;
+    }
+
+    button:hover {
+      transform: scaleX(1.02);
+      cursor: pointer;
+
+    }
+
+    .con {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      display: none;
+    }
+    h3 {
+      display: none;
+      color:grey;
+      margin-top: 4px;
+    }
+    .thank {
+        animation: vertical 2s ease-in-out infinite;
+      }
+
+      @keyframes vertical {
+        0% {
+          transform: translateY(0)
+        }
+
+        25% {
+          transform: translateY(5px)
+        }
+
+        50% {
+          transform: translateY(-5px)
+        }
+
+        75% {
+          transform: translateY(5px)
+        }
+
+        100% {
+          transform: translateY(0)
+        }
+      }
+
+    #my-icon {
+      display: none;
+    }
+
+
+    #my-icon:hover {
+      cursor: pointer;
+    }
+
+    @media (max-width:600px) {
+      .nav-left {
+        display: none;
+      }
+
+      #my-icon {
+        display: block;
+      }
+
+      .nav-left2 {
+        position: absolute;
+        display: flex;
+        flex-flow: column wrap;
+        background-color: black;
+        border-bottom-left-radius: 15px;
+        right: 0px;
+        top: 60px;
+        gap: 15px;
+        padding: 20px 10px;
+        align-items: flex-start;
+      }
+
+    
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="brand">
+      <a href="">My Shop</a>
+    </div>
+    <div class="nav-items nav-left">
+      <a href="../index.html">Home</a>
+      <a href="../login/login.html">Login</a>
+      <a href="../signUp/sign-up.html">Sign Up</a>
+      <a href="../cart/mycart.html">My Cart</a>
+      <a href="../profile/profile.html">Profile</a>
+    </div>
+    <span class="material-icons" id="my-icon">menu</span>
+  </nav>
+
+  <div class="con">
+    <button id="rzp-button1">Pay Now</button>
+    <h1 class="thank">Thank you!</h1>
+    <h3></h3>
+  </div>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

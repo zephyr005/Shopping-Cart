@@ -1,0 +1,141 @@
+/* Write your styles here */
+/* Write your styles here */
+/* Write styles here */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+
+
+}
+
+
+
+nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0px 20px;
+    height: 60px;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-size: 17px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+}
+
+nav .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-left {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 25px;
+}
+
+.nav-left div {
+    cursor: pointer;
+}
+
+button {
+    width: 200px;
+    background-color: black;
+    color: white;
+    padding: 10px 40px;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 2px;
+    font-weight: 600;
+
+}
+
+input {
+    border: 2px solid black;
+    outline: none;
+    padding: 12px;
+    font-size: 16px;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.container1 {
+    width: 80vw;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+}
+
+
+
+
+
+
+#my-icon {
+    display: none;
+}
+
+
+#my-icon:hover {
+    cursor: pointer;
+}
+
+@media (max-width:600px) {
+    .nav-left {
+        display: none;
+    }
+
+    #my-icon {
+        display: block;
+    }
+
+    .nav-left2 {
+        position: absolute;
+        display: flex;
+        flex-flow: column wrap;
+        background-color: black;
+        border-bottom-left-radius: 15px;
+        right: 0px;
+        top: 60px;
+        gap: 15px;
+        padding: 20px 10px;
+        align-items: flex-start;
+    }
+
+
+    .container1 {
+        width: 90vw;
+    }
+
+    input {
+        padding: 10px;
+        font-size: 14px;
+
+    }
+
+    button {
+        width: 130px;
+        padding: 8px;
+        white-space: nowrap;
+        font-weight: 300;
+
+    }
+}

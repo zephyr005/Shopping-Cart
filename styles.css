@@ -1,0 +1,179 @@
+/* Write styles here */
+/* Write styles here */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+
+
+}
+
+nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0px 20px;
+    height: 60px;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-size: 17px;
+}
+nav .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+nav a{
+    color: white;
+    text-decoration: none;
+
+}
+.nav-left {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 25px;
+}
+
+.nav-left div {
+    cursor: pointer;
+}
+.containet1{
+    margin-top: 60px;
+    height: 200px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    padding-left: 20px;
+}
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 40px;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 2px;
+
+}
+#sighupBtn{
+    background-color: white;
+    border: 2px solid black;
+    padding: 9px 38px;
+
+    color: black;
+    margin-left: 10px;
+}
+.img-contaner{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 110px;
+    right: 0px;
+    z-index: -1;
+
+}
+img{
+    /* border: 2px solid blue; */
+    width: 900px;
+
+}
+
+
+@media (max-width:920px)
+{
+    img{
+        width: 110vw;
+        height: auto;
+    
+    }
+    .img-contaner{
+        /* border: 1px solid red; */
+        top: 260px;
+    }
+}
+
+
+
+
+#my-icon {
+  display: none;
+}
+
+
+#my-icon:hover {
+  cursor: pointer;
+}
+@media (max-width:600px)
+{
+    .nav-left{
+        display: none;
+    }
+    #my-icon {
+      display: block;
+    }
+
+    .nav-left2{
+      position: absolute;
+      display: flex;
+      flex-flow: column wrap;
+      background-color: black;
+      border-bottom-left-radius: 15px;
+      right: 0px;
+      top: 60px;
+      gap: 15px;
+      padding: 20px 10px;
+      align-items: flex-start;
+  }
+
+  button {
+    padding: 10px 20px;
+    border-radius: 4px;
+
+}
+#sighupBtn{
+    padding: 8px 18px;
+}
+} 
+
+
+
+/*
+
+
+
+
+#my-icon {
+    display: none;
+  }
+  
+  
+  #my-icon:hover {
+    cursor: pointer;
+  }
+  @media (max-width:600px)
+  {
+      .nav-left{
+          display: none;
+      }
+      #my-icon {
+        display: block;
+      }
+  
+      .nav-left2{
+        position: absolute;
+        display: flex;
+        flex-flow: column wrap;
+        background-color: black;
+        border-bottom-left-radius: 15px;
+        right: 0px;
+        top: 60px;
+        gap: 15px;
+        padding: 20px 10px;
+        align-items: flex-start;
+    }*/

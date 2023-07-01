@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Shop</title>
+  <link rel="stylesheet" href="./shop.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+  <nav>
+    <div class="brand">
+      <a href="">My Shop</a>
+      <span class="material-icons" id="fold">
+        unfold_more
+        </span>
+        <!-- <span class="material-icons"id="unfold">
+          unfold_less
+          </span> -->
+    </div>
+    <div class="nav-items nav-left ">
+      <a href="../index.html">Home</a>
+      <a href="../login/login.html">Login</a>
+      <a href="../signUp/sign-up.html">Signup</a>
+      <a href="../cart/mycart.html">My Cart</a>
+      <a href="../profile/profile.html">Profile</a>
+    </div>
+    <span class="material-icons"id="my-icon">menu</span>
+  </nav>
+
+  <main>
+
+    <aside class="it">
+      <section>
+        <title>Colors</title>
+        <ul>
+          <li>
+            <input id="red" type="checkbox" name="color" />
+            <label for="red">Red</label>
+          </li>
+          <li>
+            <input id="blue" type="checkbox" name="color" />
+            <label for="blue">Blue</label>
+          </li>
+          <li>
+            <input id="green" type="checkbox" name="color" />
+            <label for="green">Green</label>
+          </li>
+          <li>
+            <input id="black" type="checkbox" name="color" />
+            <label for="black">Black</label>
+          </li>
+          <li>
+            <input id="grey" type="checkbox" name="color" />
+            <label for="grey">Grey</label>
+          </li>
+        </ul>
+
+      </section>
+
+
+      <section>
+        <title>Sizes</title>
+        <ul>
+          <li>
+            <input id="S" type="checkbox" name="size" />
+            <label for="S">S</label>
+          </li>
+          <li>
+            <input id="M" type="checkbox" name="size" />
+            <label for="M">M</label>
+          </li>
+          <li>
+            <input id="L" type="checkbox" name="size" />
+            <label for="L">L</label>
+          </li>
+          <li>
+            <input id="XL" type="checkbox" name="size" />
+            <label for="Xl">XL</label>
+          </li>
+        </ul>
+      </section>
+
+
+      <section>
+        <title>Rating</title>
+        <input type="range" id="range" min="0" max="5" value="0" list="values" />
+        <datalist id="values">
+          <option value="0" label="0"></option>
+          <option value="1" label="1"></option>
+          <option value="2" label="2"></option>
+          <option value="3" label="3"></option>
+          <option value="4" label="4"></option>
+          <option value="5" label="5"></option>
+        </datalist>
+      </section>
+
+
+      <section>
+        <title>Price Range</title>
+        <ul>
+          <li>
+            <input id="0-25" type="checkbox" name="prange" />
+            <label for="0-25">$0 to $25</label>
+          </li>
+          <li>
+            <input id="25-50" type="checkbox" name="prange" />
+            <label for="25-50">$25 to $50</label>
+          </li>
+          <li>
+            <input id="50-100" type="checkbox" name="prange" />
+            <label for="50-100">$50 to $100</label>
+          </li>
+          <li>
+            <input id="100-100000" type="checkbox" name="prange" />
+            <label for="100-100000">$100 onwards</label>
+          </li>
+        </ul>
+      </section>
+
+      <button type="button" id="apply_filter">apply filter</button>
+
+    </aside>
+
+
+    <main-content>
+
+     <div class="icon-cont">
+      <input type="text" placeholder="Search By Product Name" id="searchIn" />
+      <span class="material-icons myIconn">search</span>
+     </div>
+
+
+      <div class="filters">
+        <div class="filter active item1">All</div>
+        <div class="filter">Mens</div>
+        <div class="filter">Womens</div>
+        <div class="filter">Jewelery</div>
+        <div class="filter">Electronics</div>
+      </div>
+      <div class="grid-container">
+
+      </div>
+
+
+
+
+      <div class="modal">
+        <div class="modal-container">
+          <div class="error">
+            Something went wrong!
+          </div>
+          <div class="pending">
+            <!-- loader -->
+          </div>
+        </div>
+      </div>
+
+    </main-content>
+
+
+  </main>
+
+  <script src="./shop.js"></script>
+
+ 
+</body>
+
+</html>

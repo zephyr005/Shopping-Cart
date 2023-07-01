@@ -1,0 +1,145 @@
+.grid-container{
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70%;
+    margin-top: 0px;
+}
+h1{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+
+}
+.big-cont{
+    display: flex;
+    width: 95vw;
+    margin: auto;
+    justify-content: space-between;
+
+    
+}
+.checkout{
+    display: flex !important;
+    flex-flow: column wrap;
+    width: 25%;
+    background-color: black;
+    color: white;
+    height: fit-content;
+    border-radius: 5px;
+    
+}
+.checkout>div:first-child{
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 17px;
+    font-weight: 700;
+}
+.checkout .row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 7px 10px;
+
+}
+
+.last-row{
+    display: flex;
+    flex-flow: row wrap;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    justify-content: space-between;
+    padding: 15px 5px;
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+#chechoutbtn{
+width: 80%;
+margin-left: 10%;
+margin-top: 20px;
+padding: 10px 0px;
+background-color: white;
+color: black;
+border: none;
+outline: none;
+border-radius: 2px;
+font-weight: 600;
+margin-bottom: 30px;
+cursor: pointer;
+transition-duration: 1s;
+}
+#chechoutbtn:hover{
+    transform: scaleX(1.1);
+}
+
+@media (max-width:1000px) {
+     .big-cont{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    } 
+    .grid-container{
+        width: 100%;
+    }
+    .checkout{
+        width: 80%;
+        align-self: center;
+        
+    }
+    
+}
+@media (max-width:700px)
+{
+    .grid-container{
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+@media (max-width:450px)
+{
+    .grid-container{
+        width: 100%;
+        grid-template-columns: 1fr;
+
+    }
+    .checkout{
+        width: 100%;
+        align-self: center;
+        
+    }
+}
+
+/*code for Responsive navBar */
+
+#my-icon {
+    display: none;
+  }
+  
+  
+  #my-icon:hover {
+    cursor: pointer;
+  }
+  @media (max-width:600px)
+  {
+      .nav-left{
+          display: none;
+      }
+      #my-icon {
+        display: block;
+      }
+  
+      .nav-left2{
+        position: absolute;
+        display: flex;
+        flex-flow: column wrap;
+        background-color: black;
+        border-bottom-left-radius: 15px;
+        right: 0px;
+        top: 60px;
+        gap: 15px;
+        padding: 20px 10px;
+        align-items: flex-start;
+    }
+  }
